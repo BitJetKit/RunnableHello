@@ -24,6 +24,9 @@ public class Hello implements Runnable{
             
             // Display the running thread.
             System.out.println("The");
+        }catch (Exception e){
+            // Throw an exception: either the current thread could not be retrieved, or the current thread's ID had a retrieval issue.
+            System.out.println("The exception has been caught. But this software app is terminating.");
         }
     }
 } 
